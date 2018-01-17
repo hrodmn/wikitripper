@@ -1,0 +1,20 @@
+docker build -t wikitripper .
+docker run -p 4000:80 wikitripper
+docker-machine ip
+
+docker run -d -p 80:80 -v ~/workspace/wikitripper:/usr/share/nginx/html \
+    --name wikitripper nginx
+    
+echo "hello world" > index.html
+
+docker run -d -p 80:80 --name my-apache-php-app -v "$PWD":/var/www/html php:7.0-apache
+
+{   u'pageid': 43102099,
+    u'title': u'NorShor Theatre',
+    u'lon': -92.0954,
+    u'primary': u'',
+    u'lat': 46.78929,
+    u'dist': 2884.4,
+    u'ns': 0,
+    u'type': u'landmark'
+}
