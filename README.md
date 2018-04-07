@@ -62,4 +62,19 @@ landmark_results = wikipedia.geosearch(latitude=lat,
                                      results=500,
                                      radius=10000,
                                      feature_type='landmark')
+
+edu_results = wikipedia.geosearch(latitude=lat,
+                                     longitude=lon,
+                                     title=None,
+                                     results=500,
+                                     radius=10000,
+                                     feature_type='edu')
 ```
+
+# Curating content using the clickstream dataset
+The Wikipedia Clickstream dataset consists of (referer, source) pairs that can be used to describe how humans navigate through Wikipedia content. This will be useful for curating the content that makes up the historical/factual narrative for a location.
+The data can be downloaded here:
+https://dumps.wikimedia.org/other/clickstream/2018-02/clickstream-enwiki-2018-02.tsv.gz
+
+There is a guide to using the dataset here:
+https://ewulczyn.github.io/Wikipedia_Clickstream_Getting_Started/
