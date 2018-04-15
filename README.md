@@ -39,10 +39,10 @@ latitude = j['latitude']
 longitude = j['longitude']
 
 allResults = wikipedia.geosearch(latitude=lat,
-                                     longitude=lon,
-                                     title=None,
-                                     results=100,
-                                     radius=10000)
+                                longitude=lon,
+                                title=None,
+                                results=100,
+                                radius=10000)
 
 ```
 
@@ -50,25 +50,25 @@ We may also want to query by content type (e.g. city, county, landmark, etc.):
 
 ```python
 city_results = wikipedia.geosearch(latitude=lat,
-                                     longitude=lon,
-                                     title=None,
-                                     results=500,
-                                     radius=10000,
-                                     feature_type='city')
+                                  longitude=lon,
+                                  title=None,
+                                  results=500,
+                                  radius=10000,
+                                  feature_type='city')
 
 landmark_results = wikipedia.geosearch(latitude=lat,
-                                     longitude=lon,
-                                     title=None,
-                                     results=500,
-                                     radius=10000,
-                                     feature_type='landmark')
+                                  longitude=lon,
+                                  title=None,
+                                  results=500,
+                                  radius=10000,
+                                  feature_type='landmark')
 
 edu_results = wikipedia.geosearch(latitude=lat,
-                                     longitude=lon,
-                                     title=None,
-                                     results=500,
-                                     radius=10000,
-                                     feature_type='edu')
+                                  longitude=lon,
+                                  title=None,
+                                  results=500,
+                                  radius=10000,
+                                  feature_type='edu')
 ```
 
 # Curating content using the clickstream dataset
